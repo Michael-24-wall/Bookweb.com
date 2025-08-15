@@ -1,0 +1,109 @@
+.mail {
+  width: 100%;
+  margin-top: 50px;
+  background-color: #003580;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.mailContent {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.mailTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.mailDesc {
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.mailForm {
+  width: 100%;
+  max-width: 500px;
+}
+
+.inputContainer {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.inputContainer input {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.inputContainer input::placeholder {
+  color: #aaa;
+}
+
+.subscribeBtn {
+  padding: 0 30px;
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.subscribeBtn:hover {
+  background-color: #0080e0;
+  transform: translateY(-2px);
+}
+
+.successMessage {
+  background-color: #4BB543;
+  padding: 15px 25px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .inputContainer {
+    flex-direction: column;
+  }
+  
+  .subscribeBtn {
+    padding: 15px;
+  }
+  
+  .mailTitle {
+    font-size: 1.5rem;
+  }
+  
+  .mailDesc {
+    font-size: 1rem;
+  }
+}

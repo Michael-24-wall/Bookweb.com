@@ -1,0 +1,105 @@
+.footer {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 40px 0 20px;
+  font-family: 'BlinkMacSystemFont', '-apple-system', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.footerContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.fLists {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+}
+
+.fList {
+  list-style: none;
+  padding: 0;
+  min-width: 150px;
+}
+
+.fListTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.fListItem {
+  font-size: 14px;
+  color: #006ce4;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.fListItem:hover {
+  color: #003580;
+  text-decoration: underline;
+}
+
+.fBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.fText {
+  font-size: 13px;
+  color: #666;
+}
+
+.fLegal {
+  display: flex;
+  gap: 20px;
+}
+
+.fLegal span {
+  font-size: 13px;
+  color: #006ce4;
+  cursor: pointer;
+}
+
+.fLegal span:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .fLists {
+    gap: 20px;
+  }
+  
+  .fList {
+    min-width: calc(50% - 20px);
+  }
+  
+  .fBottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .fList {
+    min-width: 100%;
+  }
+  
+  .fLegal {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
